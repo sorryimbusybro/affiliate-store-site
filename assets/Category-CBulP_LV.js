@@ -1,0 +1,1 @@
+import{H as e}from"./Box-DkYAeFvQ.js";import{C as t}from"./getReactElementRef-VQFGfS-5.js";var n=e(),r=t([(0,n.jsx)(`path`,{d:`m12 2-5.5 9h11z`},`0`),(0,n.jsx)(`circle`,{cx:`17.5`,cy:`17.5`,r:`4.5`},`1`),(0,n.jsx)(`path`,{d:`M3 13.5h8v8H3z`},`2`)],`Category`);export{r as t};

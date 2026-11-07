@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <rect width="600" height="400" fill="#F0F0F0"/>
+  <g fill="none" stroke="#BDBDBD" stroke-width="3">
+    <rect x="230" y="130" width="140" height="110" rx="8"/>
+    <circle cx="265" cy="165" r="10"/>
+    <path d="M230 220 L290 170 L330 205 L350 185 L370 205 L370 240 L230 240 Z" fill="#BDBDBD" stroke="none"/>
+  </g>
+  <text x="300" y="280" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#9E9E9E">My Store</text>
+</svg>

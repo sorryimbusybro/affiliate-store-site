@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/affiliate-store-site/favicon.svg" />
+    <link rel="apple-touch-icon" href="/affiliate-store-site/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="My Store — a curated catalog of top-rated finds across audio, home, fitness and more. Buy securely on partner sites." />
+    <meta name="theme-color" content="#111111" />
+    <meta name="color-scheme" content="light" />
+    <meta property="og:title" content="My Store — Curated Products" />
+    <meta property="og:description" content="Discover curated picks. Top-rated finds, honest prices, secure checkout on partner sites." />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://houkjositmcgnvmusjrf.supabase.co" />
+    <link rel="preconnect" href="https://flagcdn.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>My Store — Curated Products</title>
+    <!--
+      BOOT SHELL. Paints the page's own grey skeleton before the JS bundle has
+      parsed, so the first frame of the shop is never a white flash. It mirrors
+      what the homepage actually paints first: the header, then the "What's New"
+      rail — a title bar and a row of moving CARD plates, not one big grey block
+      standing in for the whole content area. Same #F1F1F1 plates and the same
+      card geometry as the React skeleton that replaces it.
+      createRoot() clears #root on mount, so none of this survives hydration.
+      Keep it inline and tiny: it must be parsed before the first paint.
+    -->
+    <style>
+      html, body { margin: 0; background: #fff; }
+      .boot { --boot-pad: 12px; padding: 0 var(--boot-pad) 48px; }
+      @media (min-width: 768px) { .boot { --boot-pad: 24px; } }
+      @media (min-width: 1024px) { .boot { --boot-pad: 40px; } }
+      .boot-head { height: 105px; display: flex; flex-wrap: wrap; align-content: center; align-items: center; gap: 12px; }
+      .boot-head span { display: block; }
+      .boot-logo { height: 24px; width: 128px; border-radius: 6px; background: #F1F1F1; }
+      .boot-actions { margin-left: auto; height: 20px; width: 96px; border-radius: 6px; background: #F4F4F4; }
+      .boot-search { flex: 0 0 100%; height: 40px; border-radius: 999px; background: #F4F4F4; }
+      .boot-body { padding: 4px 0 0; }
+      .boot-title { margin: 0 auto 16px; width: 168px; height: 26px; border-radius: 6px; background: #F1F1F1; }
+      .boot-rail { display: flex; gap: 20px; overflow: hidden; }
+      .boot-rail i { display: block; flex: 0 0 208px; aspect-ratio: 3 / 4.6; border-radius: 22px; background: #F1F1F1; }
+      @media (min-width: 600px) { .boot-rail i { flex-basis: 236px; } }
+      @media (min-width: 900px) { .boot-rail i { flex-basis: 256px; } }
+    </style>
+    <script type="module" crossorigin src="/affiliate-store-site/assets/index-B-YAIIR8.js"></script>
+    <link rel="modulepreload" crossorigin href="/affiliate-store-site/assets/rolldown-runtime-hePW80VL.js">
+    <link rel="modulepreload" crossorigin href="/affiliate-store-site/assets/Box-DkYAeFvQ.js">
+    <link rel="modulepreload" crossorigin href="/affiliate-store-site/assets/preload-helper-b87mZHBN.js">
+    <link rel="modulepreload" crossorigin href="/affiliate-store-site/assets/getReactElementRef-VQFGfS-5.js">
+    <link rel="modulepreload" crossorigin href="/affiliate-store-site/assets/Modal-8dSPWnzx.js">
+    <link rel="modulepreload" crossorigin href="/affiliate-store-site/assets/List-DLq5QGx7.js">
+    <link rel="modulepreload" crossorigin href="/affiliate-store-site/assets/useSlotProps-CYIk5bjT.js">
+    <link rel="modulepreload" crossorigin href="/affiliate-store-site/assets/Grow-CqU5C-t6.js">
+    <link rel="modulepreload" crossorigin href="/affiliate-store-site/assets/Select-1zXGzuJb.js">
+    <link rel="modulepreload" crossorigin href="/affiliate-store-site/assets/getThemeProps-DvzcXBRu.js">
+    <link rel="modulepreload" crossorigin href="/affiliate-store-site/assets/Stack-DQbUMbLI.js">
+    <link rel="modulepreload" crossorigin href="/affiliate-store-site/assets/TextField-DVDqsuEG.js">
+    <link rel="modulepreload" crossorigin href="/affiliate-store-site/assets/dividerClasses-Ba7O-UiS.js">
+    <link rel="modulepreload" crossorigin href="/affiliate-store-site/assets/listItemTextClasses-BtAAHlWY.js">
+    <link rel="modulepreload" crossorigin href="/affiliate-store-site/assets/MenuItem-BlfBmKBM.js">
+    <link rel="modulepreload" crossorigin href="/affiliate-store-site/assets/Snackbar-BNVzkSZl.js">
+    <link rel="modulepreload" crossorigin href="/affiliate-store-site/assets/ListItemText-TH-968AE.js">
+    <link rel="modulepreload" crossorigin href="/affiliate-store-site/assets/visuallyHidden-BgYNxp1M.js">
+    <link rel="modulepreload" crossorigin href="/affiliate-store-site/assets/Rating-B14udMR3.js">
+    <link rel="modulepreload" crossorigin href="/affiliate-store-site/assets/supabaseClient-Cbpwcwp2.js">
+    <link rel="modulepreload" crossorigin href="/affiliate-store-site/assets/authService-M9FCV0oL.js">
+    <link rel="modulepreload" crossorigin href="/affiliate-store-site/assets/categoryService-qpNyX1ny.js">
+    <link rel="modulepreload" crossorigin href="/affiliate-store-site/assets/useCategories-BFUTBCzb.js">
+    <link rel="modulepreload" crossorigin href="/affiliate-store-site/assets/countries-De0CmfIo.js">
+    <link rel="modulepreload" crossorigin href="/affiliate-store-site/assets/prices-CvYk9W18.js">
+    <link rel="modulepreload" crossorigin href="/affiliate-store-site/assets/cmsServiceUtils-Bd2qtRl0.js">
+    <link rel="modulepreload" crossorigin href="/affiliate-store-site/assets/siteSettingsService-ZjRsoOML.js">
+    <link rel="modulepreload" crossorigin href="/affiliate-store-site/assets/cms-BK-B10eK.js">
+    <link rel="modulepreload" crossorigin href="/affiliate-store-site/assets/MarkEmailRead-bRTIpKTL.js">
+    <link rel="modulepreload" crossorigin href="/affiliate-store-site/assets/subscriberService-B4vp3_AW.js">
+    <link rel="modulepreload" crossorigin href="/affiliate-store-site/assets/adminTheme-gPpkvngy.js">
+    <link rel="modulepreload" crossorigin href="/affiliate-store-site/assets/productService-CYnc-0HG.js">
+    <link rel="modulepreload" crossorigin href="/affiliate-store-site/assets/affiliateLinkService-CaydEJ8B.js">
+    <link rel="modulepreload" crossorigin href="/affiliate-store-site/assets/useProducts-Bs0EpAQD.js">
+    <link rel="stylesheet" crossorigin href="/affiliate-store-site/assets/index-B4eysk9L.css">
+  </head>
+  <body>
+    <div id="root"><div class="boot" role="status" aria-busy="true" aria-label="Loading My Store"><div class="boot-head"><span class="boot-logo"></span><span class="boot-actions"></span><span class="boot-search"></span></div><div class="boot-body"><div class="boot-title"></div><div class="boot-rail"><i></i><i></i><i></i><i></i><i></i><i></i></div></div></div></div>
+  </body>
+</html>
